@@ -1,0 +1,51 @@
+:root {
+    --title-font: 'Azeret Mono', monospace;
+    --primary-font: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+    font-family: var(--title-font);
+}
+
+/* hero section */
+
+.hero {
+    display: flex;
+    background-image: url(./images/16-9\ Hero\ IMG_0001.jpg);
+    height: 500px;
+    background-size: cover;
+    border-bottom: 12px solid black;
+}
+
+
+/* Navigation Stylesheet */
+header {
+    display: flex;    
+    flex-wrap: wrap;
+}
+header nav {
+    display: flex;
+}
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    font-family: var(--title-font);
+    flex-wrap: wrap;
+
+}
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+
+}
+nav li{
+    padding: 10px 60px;
+
+}
+
+
+
+
+/* Font imports from Google  */
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500&family=Montserrat&display=swap');
