@@ -6,7 +6,21 @@
 h1, h2 {
     font-family: var(--title-font);
 }
+html {
+    background-color: #f5f4c1;
+}
 
+/* style all h2 */
+
+h2 {
+    font-size: 40px;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+      
+}
 /* hero section */
 
 .hero {
@@ -14,7 +28,8 @@ h1, h2 {
     background-image: url(./images/16-9\ Hero\ IMG_0001.jpg);
     height: 500px;
     background-size: cover;
-    border-bottom: 12px solid black;
+    border-bottom: 3px solid black;
+
 }
 
 
@@ -25,6 +40,7 @@ header {
 }
 header nav {
     display: flex;
+    text-align: center;
 }
 nav ul {
     list-style-type: none;
@@ -44,7 +60,29 @@ nav li{
 
 }
 
+/* portfolio sections */
+.portfolio-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
 
+}
+
+.portfolio-containers img{
+    width:400px;
+    height:400px;
+    object-fit: cover;
+}
+
+.portfolio-containers div { 
+    height: auto; 
+    width: auto;
+    padding: 75px;  
+}
+
+.portfolio-containers img {
+    border-radius: 50px;
+}
 
 
 /* Font imports from Google  */
