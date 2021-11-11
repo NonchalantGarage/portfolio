@@ -69,19 +69,18 @@ nav li{
 }
 
 .portfolio-containers img{
-    width:400px;
+    width:300px;
     height:400px;
     object-fit: cover;
+    border-radius: 40px;
+    border: 3px solid saddlebrown;
+    padding: 0 auto;
 }
 
 .portfolio-containers div { 
     height: auto; 
     width: auto;
     padding: 75px;  
-}
-
-.portfolio-containers img {
-    border-radius: 50px;
 }
 
 /* contact me */
