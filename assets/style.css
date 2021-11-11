@@ -84,6 +84,18 @@ nav li{
     border-radius: 50px;
 }
 
+/* contact me */
+
+.contact-me ul li{
+    list-style-type: none;  
+}
+
+.contact-me a{
+    text-decoration: none;
+    color: black;
+    
+
+}
 
 /* Font imports from Google  */
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500&family=Montserrat&display=swap');
