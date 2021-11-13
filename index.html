@@ -15,56 +15,81 @@
         <nav>
             <h1>CURTIS VAN HONG, CPA</h1>
             <ul>
-                <li> <a href="#portfolio">Portfolio </a> </li>
                 <li> <a href="#about-me"> About Me</a></li>
+                <li> <a href="#portfolio">Portfolio </a> </li>
                 <li> <a href="#contact-me">Let's Collab</a> </li>
             </ul>
         </nav>
          </header>
+
+         <h2 id="about-me">About Me </h2>
         <!-- about me section -->
         <div class = "about-me">
-            <h2 id="about-me">About Me </h2>
+            <img src="./assets/images/Selfie.png" alt="Selfie"> </a>
+            <p>Hi! I'm Curtis Hong, a life-long learner, currently enrolled in UC Berkeley's Full Stack Web Development Program. My short-term goal is build the skillset to be employer-competitive by 2022 and make a career switch from the accounting/finance industry to technology. My long-term vision is to create change in the world by building powerful applications that enable thought leaders to change the culture and the status quo, making a positive impact for our environment and communities.
+               <br>
+               <br>
+                Other interests include creating content, specifically in video production and photography. Cycling is my passion my intent is to inspire others to ride bicycles by showcasing how beautiful cycling is.  
+            </p>
+            
         </div>
 
         <!-- portfolio section -->
         <h2 id="portfolio">Portfolio</h2>
 
-        <div class = "portfolio-containers">
-            <div>
-                <p>Content Creation and Personal Blog at Nonchalant Garage</p>
-                <a href="https://www.nonchalantgarage.com/" target="_blank"> <img src="./assets/images/NonchalantGarage.png" alt="Personal Brand"> </a>
-            </div>
-            <div>
-                <p>UCB HTML/CSS Run Buddy Assignment</p>
-                <a href="https://nonchalantgarage.github.io/run-buddy/"> <img src="./assets/images/Run Buddy.png" alt="Run Buddy Screnshot"> </a>
-            </div>
-            <div>
-                <p>Morgan Schutte, MFT</p>
-                <img href="" src="" alt="">
-            </div>
-            <div>
-                <p>Rock Paper Scissors</p>
-                <img href="" src="" alt="">
-            </div>
+        <div class = "portfolio-containers-large">
+            <p>Content Creation and Personal Blog </p>
+            <a class ="image-hover" href="https://www.nonchalantgarage.com/" target="_blank"> <img src="./assets/images/NonchalantGarage.png" alt="Personal Brand"> </a>
         </div>
 
+        <section class = "portfolio-containers">
+            
+            <div>
+                <p>UC Berkeley Advanced HTML/CSS Assignment</p>
+                <a class ="image-hover" href="https://nonchalantgarage.github.io/run-buddy/ " target="_blank"> <img src="./assets/images/Run Buddy.png" alt="Run Buddy Screnshot"> </a>
+            </div>
+            <div>
+                <p>Morgan Schutte, MFT, Web Development and Design (Placeholder)</p>
+                <a class ="image-hover" href="#"> <img src="./assets/images/morgan-schutte MFT.jpg" alt="Morgan Schutte, MFT Website"> </a>
+            </div>
+            <div>
+                <p>Rock Paper Scissors Application (Placeholder)</p>
+                <a class ="image-hover" href="#"> <img src="./assets/images/rock-paper-scissors.jpg" alt="Rock Papaer Scissors Application"> </a>
+            </div>
+        </section>
+
         <!-- contact me -->
+        <H2 id="contact-me">Let's collab</H2>
         <div class="contact-me">
-            <H2 id="contact-me">Let's collab</H2>
             <ul>
+                <H4>Keep it Social</H4>
                 <li><a href="mailto:hong.curtis@gmail.com">Email</a> </li>
                 <li><a href="https://www.instagram.com/nonchalantgarage/">Instagram</a> </li>
                 <li><a href="https://www.strava.com/athletes/117506">Strava</a> </li>
                 <li><a href="https://www.youtube.com/channel/UCoSDn9vfHFSYRJ-SwgFnL-A">Youtube</a> </li>
-            </ul>
+                <li><a href="https://www.linkedin.com/in/curtisvanhong/">LinkedIn</a> </li>
 
+            </ul>
+            <form>
+                <h4>Contact Me</h4>
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" placeholder="Your Name" />
+
+                <label for="contact-email">Your Email</label>
+                <input type="text" id="email-address" placeholder="Your Email" />
+
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" placeholder="Message"></textarea>
+            
+                <button type="submit">Submit</button>
+              </form>
         </div>
 
 
         <!-- footer section  -->
         <footer>
             
-        </footer>
+        </footer>   
     </body>
 
 </html>

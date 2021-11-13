@@ -8,6 +8,7 @@ h1, h2 {
 }
 html {
     background-color: #f5f4c1;
+    font-family: var(--primary-font);
 }
 
 /* style all h2 */
@@ -26,27 +27,31 @@ h2 {
 .hero {
     display: flex;
     background-image: url(./images/16-9\ Hero\ IMG_0001.jpg);
-    height: 500px;
     background-size: cover;
+    height: 500px;
     border-bottom: 3px solid black;
 
 }
 
 
 /* Navigation Stylesheet */
-header {
-    display: flex;    
-    flex-wrap: wrap;
-}
+
 header nav {
     display: flex;
     text-align: center;
+    justify-content: space-between;
 }
+
+nav h1{
+    float: left;
+}
+
 nav ul {
     list-style-type: none;
     display: inline-flex;
     font-family: var(--title-font);
     flex-wrap: wrap;
+    justify-content: end;
 
 }
 nav a {
@@ -60,12 +65,54 @@ nav li{
 
 }
 
+/* about me section */
+
+.about-me {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 100px;
+}
+
+.about-me img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 0 100px;
+}
+
 /* portfolio sections */
+
+.portfolio-containers-large p{
+    text-align: center;
+    width: auto;
+}
+
+.portfolio-containers-large{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;  
+
+}
+.portfolio-containers-large img{
+    width:550px;
+    height:450px;
+    object-fit: cover;
+    border-radius: 40px;
+    padding: 0 auto;
+    opacity: 60%;
+}
+
 .portfolio-containers {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;   
+    flex-wrap:wrap;
+    justify-content: space-around;   
+    align-items: center;
+}
 
+.portfolio-containers p{
+    text-align: center;
+    max-width: 306px;
 }
 
 .portfolio-containers img{
@@ -73,8 +120,13 @@ nav li{
     height:400px;
     object-fit: cover;
     border-radius: 40px;
-    border: 3px solid saddlebrown;
     padding: 0 auto;
+    opacity: 60%;
+}
+
+
+.image-hover:hover  img{
+    opacity: 100%;
 }
 
 .portfolio-containers div { 
@@ -85,16 +137,92 @@ nav li{
 
 /* contact me */
 
-.contact-me ul li{
+.contact-me {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-me li{
     list-style-type: none;  
+    padding: 5px 0 5px 0;
+}
+
+.contact-me ul {
+    margin: 0;
 }
 
 .contact-me a{
     text-decoration: none;
     color: black;
-    
-
 }
+
+
+.contact-me input, .contact-me textarea {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+  }
+  
+  .contact-me input:focus, .contact-me textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
+  
+  .contact-me button {
+    width: 50%;
+
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
 
 /* Font imports from Google  */
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500&family=Montserrat&display=swap');
+  }
+
+  /* responsive web design section */
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      position: relative;
+    }
+  
+    .about-me {
+      margin: 0 50px;
+    }
+    nav h1{
+      width: 100%;
+    }
+
+    .about-me img {
+      padding: 0 20px;
+    }
+}
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+      .about-me {
+        margin: 0 50px;
+      }
+      nav h1{
+        width: 150%;
+        font-size: 25px;
+      }
+  
+      .about-me {
+          flex-direction: column;
+          align-items: center;
+      }
+  }
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+}
